@@ -43,3 +43,5 @@ Colours: https://photos.google.com/photo/AF1QipN6kt3_kho6DuEQ3Qn46FCrGLc9oQQmy0x
 
 ![](docs/KK5kvYnYZ2mW_OS8bsqN_eFpbEaAqak9UeSFSPT_euuQkpN0O-hOuauQ1_zB-pG-d4otVBewkyV3PBbqOT9hzw7UfK4LQYv3Z0djNrapAObwNPmSSKLeEiw11rlwRueoEgQVY1dwQkA0bGBLSEi9jQFNBgkWmY-uYsGW7-K1peXz_mzHRiz6vSXhpjGI2ykVwWYiWI2IP.jpg)
 
+spreadsheet: https://docs.google.com/spreadsheets/d/14XXwNUsAp-O_ndWsFCNTYJIc-vzAupeLfihkVLRqyA4/edit#gid=0
+
