@@ -46,7 +46,14 @@ scrape_temperatures <- function(startdate)
 	url <- "http://www.martynhicks.uk/weather/data.php?page="
 
 	# Don't look for the current month it won't be up yet
-	to <- min(today() - months(1), startdate + days(280))
+	prevm <- ymd(
+		paste(
+			year(today()-months(1)),
+			month(today()-months(1)),
+			days_in_month(today()-months(1))
+		)
+	)
+	to <- min(prevm, startdate + days(280))
 
 	months <- seq(startdate, to, by="month")
 	dat <- lapply(months, function(d)
@@ -74,6 +81,8 @@ scrape_temperatures <- function(startdate)
 			) %>%
 			filter(!is.na(max) & date >= startdate & date <= (startdate + days(279))) %>%
 			select(date, everything(), -year, -month, -day)
+			print(head(x))
+			return(x)
 	}) %>% bind_rows()
 
 	sindat <- fit_cos(startdate, startdate + days(280))
@@ -138,7 +147,7 @@ colours <- tribble(
 co <- colours$hex
 names(co) <- seq_along(co)
 
-res <- scrape_temperatures(ymd("2017/11/18"))
+res <- scrape_temperatures(ymd("2018/11/18"))
 ggplot(res, aes(x = col, y=row)) +
 geom_tile(aes(fill=as.factor(col_sin)), colour="white", size=2) +
 scale_fill_manual(values=co) +
