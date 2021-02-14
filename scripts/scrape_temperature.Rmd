@@ -30,6 +30,19 @@ Picked out seven colours:
 
 ![yarn colours](../images/KK5kvYnYZ2mW_OS8bsqN_eFpbEaAqak9UeSFSPT_euuQkpN0O-hOuauQ1_zB-pG-d4otVBewkyV3PBbqOT9hzw7UfK4LQYv3Z0djNrapAObwNPmSSKLeEiw11rlwRueoEgQVY1dwQkA0bGBLSEi9jQFNBgkWmY-uYsGW7-K1peXz_mzHRiz6vSXhpjGI2ykVwWYiWI2IP.jpg)
 
+Brand: Kingcole Value Super Chunky 100% premium acrylic
+
+Colours:
+
+- White - 1758 - 632610
+- Champagne - 12 - 632097
+- Oatmeal - 14 - 632610
+- Glacier - 1548 - 632610
+- Graphite - 1545 - 632610
+- Fern - 3309 - 632610
+- Mustard - 3121 - 630674
+- Rust - 1761 - 628546
+
 They roughly translate to these hex codes:
 
 ```{r}
