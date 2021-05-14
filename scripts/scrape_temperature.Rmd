@@ -259,10 +259,14 @@ ymd("2018/11/18") %>%
 
 This is what the new blanket looks like under the different possible schemes:
 
-```{r, cache=FALSE, fig.width=10, fig.height=20}
+```{r}
 res <- ymd("2020/10/25") %>%
 	scrape_temperatures() %>%
 	convert_temperatures()
+```
+
+
+```{r, cache=FALSE, fig.width=10, fig.height=nrow(res)/5}
 res %>%
 	pivot_longer(c(col_sin, col_max, col_min, col_ave)) %>%
 	ggplot(aes(x = col, y=row)) +
