@@ -259,7 +259,7 @@ ymd("2018/11/18") %>%
 
 This is what the new blanket looks like under the different possible schemes:
 
-```{r}
+```{r, cache=FALSE}
 res <- ymd("2020/10/25") %>%
 	scrape_temperatures() %>%
 	convert_temperatures()
